@@ -1,49 +1,57 @@
-import unittest 
+import unittest
 from square import Square
-
-class SquareTestCase(unittest.TestCase): 
-
-    # TODO #1
-    # pre-condition: a square instantiated with a negative side 
+ 
+class SquareTestCase(unittest.TestCase):
+ 
+    # TO DO #1
+    # pre-condition: a square instantiated with a negative side
     # post-condition: the square's side is set to 1
     def testNegativeSide(self):
-        pass
-
-    # TODO #2
+        s = Square(-1)
+        self.assertEqual(s.side, 1)
+ 
+    # TO DO #2
     # pre-condition: a square instantiated with side set to zero
     # post-condition: the square's side is set to 1
     def testZeroSide(self):
-        pass
-
-    # TODO #3    
+        s = Square(0)
+        self.assertEqual(s.side, 1)
+ 
+    # TO DO #3    
     # pre-condition: a square instantiated with side set to 1
     # post-condition: the square's side is set to 1
     def testUnitarySide(self):
-        pass
-
-    # TODO #4
+        s = Square(1)
+        self.assertEqual(s.side, 1)
+ 
+    # TO DO #4
     # pre-condition: a square instantiated with side set to 1
     # post-condition: the square's area is 1
     def testUnitarySideForArea(self):
-        pass
-
-    # TODO #5
+        s = Square(1)
+        self.assertEqual(s.area(), 1)
+ 
+    # TO DO #5
     # pre-condition: a square instantiated with side set to 1
     # post-condition: the square's perimeter is 4
     def testUnitarySideForPerimetyer(self):
-        pass
-
-    # TODO #6
+        s = Square(1)
+        self.assertEqual(s.perimeter(), 4)
+ 
+    # TO DO #6
     # pre-condition: a square instantiated with side set to 2
     # post-condition: the square's area is 4
     def testArbitrarySideForArea(self):
-        pass
-
-    # TODO #7
+        s = Square(2)
+        self.assertEqual(s.area(), 4)
+ 
+    # TO DO #7
     # pre-condition: a square instantiated with side set to 2
     # post-condition: the square's perimeter is 8
     def testArbitrarySideForPerimetyer(self):
-        pass
-
+        s = Square(2)
+        self.assertEqual(s.perimeter(), 8)
+ 
 if __name__ == '__main__':
-    unittest.main(start_dir='src')
+    # unittest.main(start_dir='src')
+    unittest.main()
